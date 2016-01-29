@@ -5,8 +5,8 @@
  * Displays all of the head element and everything up until the "site-content" div.
  *
  * @package WordPress
- * @subpackage SinGluten
- * @since SinGluten 1.0
+ * @subpackage Bacare
+ * @since Bacare 1.0
  */
 ?>
 <!DOCTYPE html>
@@ -30,7 +30,7 @@
     <meta name="twitter:url" content="<?php echo get_site_url() ?>"/>
     <meta name="twitter:title" content="<?php bloginfo('name'); ?> "/>
     <meta name="twitter:description" content="<?php bloginfo('description'); ?>"/>
-    <meta name="twitter:site" content="@patosingluten" />
+    <meta name="twitter:site" content="@bacare" />
     <meta name="twitter:creator" content="@gasbriones" />
     <!-- Links -->
     <link href="<?php echo get_template_directory_uri(); ?>/css/normalize.css" rel="stylesheet" type="text/css">
@@ -40,7 +40,7 @@
     <link href="<?php echo get_template_directory_uri(); ?>/css/hover-min.css" rel="stylesheet" type="text/css">
     <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet" type="text/css">
     <link href="<?php echo get_template_directory_uri(); ?>/css/mediaqueries.css" rel="stylesheet" type="text/css">
-    <title><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?> </title>
+    <title><?php bloginfo('name'); ?> </title>
     <?php wp_head(); ?>
 </head>
 
