@@ -30,7 +30,8 @@ a {
     letter-spacing: 0.11765em; }
     .top-bar .social li {
       text-align: right;
-      margin-bottom: 0.17647em; }
+      margin-bottom: 0.17647em;
+      display: block !important; }
 
 .banner_wrapper {
   margin-bottom: 2.6875em; }
