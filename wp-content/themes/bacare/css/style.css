@@ -1,7 +1,57 @@
 @font-face {
-  font-family: 'AGaramondPro-Regular';
-  src: url("../fonts/AGaramondPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AGaramondPro-Regular.woff") format("woff"), url("../fonts/AGaramondPro-Regular.ttf") format("truetype"), url("../fonts/AGaramondPro-Regular.svg#AGaramondPro-Regular") format("svg");
+  font-family: 'eurostile';
+  src: url("../fonts/eurostile.eot?#iefix") format("embedded-opentype"), url("../fonts/eurostile.woff") format("woff"), url("../fonts/eurostile.ttf") format("truetype"), url("../fonts/eurostile.svg#AGaramondPro-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
+a {
+  color: #000;
+  text-decoration: none; }
+
+.banner {
+  border: none !important; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1360px; }
+
+.top-bar {
+  position: relative;
+  margin-bottom: 2.35294em; }
+  .top-bar .logo {
+    margin: 0 auto;
+    display: table; }
+  .top-bar .social {
+    font-size: 1.0625em;
+    position: absolute;
+    top: 3.52941em;
+    right: 0;
+    font-family: eurostile;
+    letter-spacing: 0.11765em; }
+    .top-bar .social li {
+      text-align: right;
+      margin-bottom: 0.17647em; }
+
+.banner_wrapper {
+  margin-bottom: 2.6875em; }
+
+.menu {
+  display: table;
+  width: 74%;
+  margin: 0 auto; }
+  .menu li {
+    float: left;
+    display: table;
+    font-family: eurostile;
+    text-transform: uppercase;
+    font-size: 1.0625em;
+    letter-spacing: 0.11765em;
+    margin: 0 3.5%; }
+    .menu li:first-child {
+      margin-left: 0; }
+    .menu li:last-child {
+      margin-right: 0; }
+    .menu li.current-menu-item a {
+      font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
