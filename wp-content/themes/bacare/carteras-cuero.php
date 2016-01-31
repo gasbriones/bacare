@@ -21,7 +21,11 @@ $query = new WP_Query($args);
         while ($query->have_posts()):$query->the_post();
           ?>
           <li>
-            <img src="<?php echo the_field('imagen_principal_producto') ?>"/>
+            <ul class="prod-detail">
+              <li><img src="<?php echo the_field('imagen_principal_producto') ?>"/></li>
+              <li>Artículo <b><?php echo the_field('modelo_del_producto') ?></b></li>
+            </ul>
+
           </li>
         <?php endwhile;
       else:

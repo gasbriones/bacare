@@ -7,7 +7,7 @@
         slideWidth: 200,
         slideMargin:122,
         pager: false,
-        infiniteLoop: true,
+        infiniteLoop: false,
         moveSlides:1
     });
 
