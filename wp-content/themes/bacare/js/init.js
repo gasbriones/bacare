@@ -2,12 +2,13 @@
 (function ($) {
 
     $('.product-list').bxSlider({
-        minSlides: 3,
+        minSlides: 1,
         maxSlides: 3,
-        slideWidth: 154,
-        slideMargin:15,
+        slideWidth: 200,
+        slideMargin:122,
         pager: false,
-        infiniteLoop: false
+        infiniteLoop: true,
+        moveSlides:1
     });
 
 })(jQuery);

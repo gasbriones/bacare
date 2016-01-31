@@ -10,6 +10,34 @@
   font-style: normal;
 }
 
+html,body{
+  margin: 0;
+  padding: 0;
+}
+
+.bx-wrapper{
+  width: 100% !important;
+  max-width: 100% !important;
+  background: #F1EFEB !important;
+  .bx-viewport{
+    width: 70% !important;
+    background: none !important;
+    margin: 0 auto !important;
+    border: none;
+    box-shadow: none;
+    left: 0;
+    transform: translateZ(0px);
+  }
+  .bx-controls{
+    .bx-prev{
+      left: 5% !important;
+    }
+    .bx-next{
+      right: 5% !important;
+    }
+  }
+}
+
 a{
   color:#000;
   text-decoration: none;
@@ -48,38 +76,89 @@ a{
 
 .banner_wrapper{
   margin-bottom: (43em/16);
-}
-
-.menu{
-  display: table;
-  width: 74%;
-  margin: 0 auto;
-  li{
-    float: left;
-    display: table;
-    font-family: eurostile;
-    text-transform: uppercase;
-    font-size: (17em/16);
-    letter-spacing: (2em/17);
-    margin: 0 3.5%;
-
-    &:first-child{
-      margin-left: 0;
+  .banner{
+    img{
+      height: auto;
     }
-
-    &:last-child{
-      margin-right: 0;
-    }
-
-    &.current-menu-item{
-      a{
-        font-weight: bold;
-      }
-    }
-
   }
 }
 
+.menu-header-menu-container{
+  margin-bottom: (25em/16);
+  .menu{
+    display: table;
+    width: 74%;
+    margin: 0 auto;
+
+    .menu-item {
+      position: relative;
+      &:hover{
+        &:before{
+          @include triangle;
+        }
+      }
+    }
+
+    li{
+      float: left;
+      display: table;
+      font-family: eurostile;
+      text-transform: uppercase;
+      font-size: (17em/16);
+      letter-spacing: (2em/17);
+      margin: 0 3.5%;
+
+      &:first-child{
+        margin-left: 0;
+      }
+
+      &:last-child{
+        margin-right: 0;
+      }
+
+
+      &.current-menu-item{
+        &:before{
+          @include triangle;
+        }
+        a{
+          font-weight: bold;
+        }
+      }
+
+    }
+  }
+}
+
+.home-img{
+  margin-bottom: (18em/16);
+}
+
+#footer{
+  font-family: eurostile;
+  font-size: (14em/16);
+  letter-spacing: (2em/14);
+  text-align: center;
+  margin: (35em/14) auto (45em/14);
+
+  .img-footer{
+    margin-right: 1%;
+  }
+
+}
+
+
+.product-list{
+  .prod-detail{
+    font-size: (14em/16);
+    padding: (80em/14) 0;
+    font-family: eurostile;
+    text-transform: uppercase;
+    li{
+      text-align: center;
+    }
+  }
+}
 
 
 
