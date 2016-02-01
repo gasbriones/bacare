@@ -7,5 +7,5 @@ query_posts('page_id=42');
             <img src="<?php echo the_field('imagen_home') ?>"/>
         </div>
     <?php endwhile; ?>
-    <?php echo do_shortcode('[banner id="47"]')?>
+    <?php echo do_shortcode('[banner id="47"]') ?>
 </div>

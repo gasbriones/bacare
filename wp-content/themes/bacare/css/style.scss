@@ -10,16 +10,32 @@
   font-style: normal;
 }
 
-html,body{
+@font-face {
+  font-family: 'myriad';
+  src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MyriadPro-Regular.woff') format('woff'),
+  url('../fonts/MyriadPro-Regular.ttf') format('truetype'),
+  url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
   margin: 0;
   padding: 0;
 }
 
-.bx-wrapper{
+.bx-wrapper {
   width: 100% !important;
   max-width: 100% !important;
   background: #F1EFEB !important;
-  .bx-viewport{
+
+  img{
+    margin: 0 auto;
+    max-height: (152em/16);
+  }
+
+  .bx-viewport {
     width: 70% !important;
     background: none !important;
     margin: 0 auto !important;
@@ -28,23 +44,25 @@ html,body{
     left: 0;
     transform: translateZ(0px);
   }
-  .bx-controls{
-    .bx-prev{
+  .bx-controls {
+    .bx-prev {
       left: 5% !important;
     }
-    .bx-next{
+    .bx-next {
       right: 5% !important;
     }
   }
 }
 
-a{
-  color:#000;
+a {
+  color: #000;
   text-decoration: none;
 }
-.banner{
+
+.banner {
   border: none !important;
 }
+
 .wrapper {
   margin: 0 auto;
   width: 90%;
@@ -65,7 +83,7 @@ a{
     right: 0;
     font-family: eurostile;
     letter-spacing: (2em/17);
-    li{
+    li {
       text-align: right;
       margin-bottom: (3em/17);
       display: block !important;
@@ -73,33 +91,28 @@ a{
   }
 }
 
+.banner_wrapper {
 
-.banner_wrapper{
-  margin-bottom: (43em/16);
-  .banner{
-    img{
+  .banner {
+    img {
       height: auto;
     }
   }
 }
 
-.menu-header-menu-container{
+.menu-header-menu-container {
   margin-bottom: (25em/16);
-  .menu{
+  margin-top: (43em/16);
+  .menu {
     display: table;
     width: 74%;
     margin: 0 auto;
 
     .menu-item {
       position: relative;
-      &:hover{
-        &:before{
-          @include triangle;
-        }
-      }
     }
 
-    li{
+    li {
       float: left;
       display: table;
       font-family: eurostile;
@@ -108,20 +121,19 @@ a{
       letter-spacing: (2em/17);
       margin: 0 3.5%;
 
-      &:first-child{
+      &:first-child {
         margin-left: 0;
       }
 
-      &:last-child{
+      &:last-child {
         margin-right: 0;
       }
 
-
-      &.current-menu-item{
-        &:before{
+      &.current-menu-item {
+        &:before {
           @include triangle;
         }
-        a{
+        a {
           font-weight: bold;
         }
       }
@@ -130,36 +142,140 @@ a{
   }
 }
 
-.home-img{
+.home-img {
   margin-bottom: (18em/16);
 }
 
-#footer{
+#footer {
   font-family: eurostile;
   font-size: (14em/16);
   letter-spacing: (2em/14);
   text-align: center;
   margin: (35em/14) auto (45em/14);
 
-  .img-footer{
+  .img-footer {
     margin-right: 1%;
   }
 
 }
 
-
-.product-list{
-  .prod-detail{
+.product-list {
+  opacity: 0;
+  .prod-detail {
     font-size: (14em/16);
     padding: (80em/14) 0;
-    font-family: eurostile;
+    font-family: myriad;
     text-transform: uppercase;
-    li{
+    li {
       text-align: center;
+    }
+
+    .code{
+      margin-top: (10em/14);
     }
   }
 }
 
+.article {
+  padding: 5% 10%;
+  font-family: myriad;
+  .details-img {
+    float: left;
+    width: 12%;
+    margin-right: 10%;
+  }
+  .principal-img {
+    float: left;
+    width: 45%;
+
+    .prod-img{
+      max-height: (400em/16);
+      margin: 0 auto;
+      display: table;
+    }
+  }
+  .details {
+    float: right;
+    margin-top: (100em/16);
+    width: 25%;
+    h1.title {
+      text-transform: uppercase;
+      font-size: (18em/16);
+      margin-bottom: (25em/18);
+    }
+
+    .description {
+      margin-bottom: (10em/16);
+      p{
+        margin: 0;
+      }
+      .title {
+        text-transform: uppercase;
+        font-size: (18em/16);
+        font-weight: bold;
+      }
+      .content {
+        font-size: (18em/16);
+        margin: 0;
+      }
+    }
+    .colours {
+      margin-bottom: (25em/16);
+
+      .color{
+        width: (30em/16);
+        height: (30em/16);
+        float: left;
+        margin-right: (10em/16);
+      }
+    }
+
+    .weight {
+      .title {
+        font-size: (18em/16);
+        font-weight: bold;
+      }
+    }
+  }
+
+  .thumbnails {
+    li {
+      margin-bottom: (10em/16);
+    }
+  }
+}
+
+#main{
+  position: relative;
+  margin-bottom: 2.6875em;
+  #product-container{
+    position: absolute;
+    border-top: solid 5px #C0D5C4;
+    margin-top: (20em/16);
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    display: none;
+    background: #FFFFFF;
+    width: 100%;
+
+    .close{
+      float: right;
+      cursor: pointer;
+      font-size: (24em/16);
+      margin: (15em/24);
+      font-family: myriad;
+      font-weight: bold;
+      color: #C0D5C4;
+    }
+  }
+}
+
+.quienes-somos{
+  background: #F1EFEB;
+  font-family: myriad;
+  padding: (30em/16) 7% (140em/16);
+}
 
 
 
