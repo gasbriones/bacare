@@ -39,7 +39,13 @@ $query = new WP_Query($args);
                     ?>
                     <li>
                         <ul class="prod-detail">
-                            <li><a href="<?php echo get_site_url().'/articulo/?art='.$post->ID?>"><img src="<?php echo the_field('imagen_principal_producto') ?>"/></a></li>
+                            <li>
+                                <a href="<?php echo get_site_url().'/articulo/?art='.$post->ID?>">
+                                    <figure>
+                                        <img src="<?php echo the_field('imagen_principal_producto') ?>"/>
+                                    </figure>
+                                </a>
+                            </li>
                             <li class="code">Artículo <b><?php echo the_field('modelo_del_producto') ?></b></li>
                         </ul>
                     </li>

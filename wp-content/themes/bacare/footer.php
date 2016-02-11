@@ -2,7 +2,7 @@
     <div class="copy">
         <a href="<?php echo get_site_url(); ?>">
             <img class="img-footer" src="<?php echo get_template_directory_uri(); ?>/images/logo-footer.png"/></a>
-        <span><b>Showroom:</b> Caracas 24662, Ciudad autónoma de Buenos Aires / Tel.: 4585.7366</span>
+        <span><b>Showroom:</b> Caracas 2466, Ciudad autónoma de Buenos Aires / Tel.: 4582.7366</span>
     </div>
 
     <?php wp_footer(); ?>

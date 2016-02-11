@@ -16,11 +16,18 @@
 
         $('.prod-detail li a').click(function (e) {
             e.preventDefault();
+
             $('#product-container .content').load($(this).attr('href'), function () {
+
+                $('.bx-wrapper').hide();
+
                 $('#product-container').fadeIn();
+
                 $('.close').click(function () {
-                    $('#product-container').fadeOut();
+                    $('#product-container').hide();
+                    $('.bx-wrapper').show();
                 });
+
                 $('.principal-img').zoom();
 
                 $('.thumbnails li').click(function () {
@@ -30,6 +37,7 @@
                     });
                 });
             });
+            return false;
         });
     });
 
